@@ -4,7 +4,7 @@
 #include "services/colaborador/ColaboradorService.h"
 #include <fstream>
 #include "lib/json.hpp"
-#include "services/Departamento/DepartamentoService.h"
+#include "services/departamento/DepartamentoService.h"
 #include "services/formacao/FormacaoService.h"
 #include "services/nota/NotaService.h"
 #include "utils/storage.h"

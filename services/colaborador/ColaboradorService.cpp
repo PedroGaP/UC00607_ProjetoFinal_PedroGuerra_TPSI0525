@@ -8,7 +8,7 @@
 #include <chrono>
 #include <fstream>
 #include <map>
-#include "services/Departamento/DepartamentoService.h"
+#include "services/departamento/DepartamentoService.h"
 
 // Escolhe um colaborador da lista
 // Retorna um ponteiro para o colaborador escolhido ou nullptr se a escolha for invalida
