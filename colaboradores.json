@@ -1,0 +1,19 @@
+[
+    {
+        "itensCalendario": [
+            {
+                "data": "15/08/2025",
+                "tipo": 70
+            }
+        ],
+        "nome": "#\f\u0017\u0006\nM&\u0007\r\u0001\u001b\u0012"
+    },
+    {
+        "itensCalendario": [],
+        "nome": "#\f\u0017\u0006\nM&\u0007\r\u0001\u001b\u0012TW"
+    },
+    {
+        "itensCalendario": [],
+        "nome": "1\f\u0012\u0000\u0017\u0004\u001bR:\u001c\r\u0001\u001d\u0002\u0018\u0004\u0001"
+    }
+]
