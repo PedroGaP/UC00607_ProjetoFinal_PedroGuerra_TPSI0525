@@ -1,6 +1,6 @@
 #include "ColaboradorService.h"
-#include "../../models/colaborador/Colaborador.h"
-#include "../../utils/utils.h"
+#include "models/colaborador/Colaborador.h"
+#include "utils/utils.h"
 #include <iostream>
 #include <conio.h>
 #include <iomanip>
