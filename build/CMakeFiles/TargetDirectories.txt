@@ -1,3 +1,0 @@
-C:/Users/peter/Desktop/UC00607_ProjetoFinal_PedroGuerra_TPSI0525/build/CMakeFiles/GestaoRH.dir
-C:/Users/peter/Desktop/UC00607_ProjetoFinal_PedroGuerra_TPSI0525/build/CMakeFiles/edit_cache.dir
-C:/Users/peter/Desktop/UC00607_ProjetoFinal_PedroGuerra_TPSI0525/build/CMakeFiles/rebuild_cache.dir
