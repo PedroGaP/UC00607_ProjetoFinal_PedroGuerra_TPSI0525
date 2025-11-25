@@ -26,8 +26,6 @@ bool temColaboradorComDiaFerias(colabList, Data d, Colaborador *colab) {
 }
 
 void estatisticasDepartamento(colabList) {
-
-    // Mapa por departamento: string -> int[3] {ferias, faltas, numColabs}
     std::map<std::string, int[2]> statsDepartamento;
 
     colabs->foreach([&](int i, Colaborador c) {
@@ -39,13 +37,9 @@ void estatisticasDepartamento(colabList) {
             return ic.getTipo() == FALTA;
         }).size();
 
-        if (statsDepartamento.find(c.getDepartamento()) == statsDepartamento.end()) {
-            statsDepartamento[c.getDepartamento()][0] = ferias;
-            statsDepartamento[c.getDepartamento()][1] = faltas;
-        } else {
-            statsDepartamento[c.getDepartamento()][0] += ferias;
-            statsDepartamento[c.getDepartamento()][1] += faltas;
-        }
+        statsDepartamento[c.getDepartamento()][0] += ferias;
+        statsDepartamento[c.getDepartamento()][1] += faltas;
+
     });
 
     // Imprimir tabela
@@ -64,6 +58,26 @@ void estatisticasDepartamento(colabList) {
                   << std::setw(8) << faltasTotal
                   << std::endl;
     }
+
+    std::string departamento = "";
+    int faltasDepartamento = -1;
+
+    for (auto &[dep, dados] : statsDepartamento) {
+        if (faltasDepartamento == -1) {
+            departamento = dep;
+            faltasDepartamento = dados[1];
+        }
+
+        if (dados[1] > faltasDepartamento) {
+            departamento = dep;
+            faltasDepartamento = dados[1];
+        }
+    }
+
+    if (faltasDepartamento < 1)  return;
+
+    std::cout << "O departamento que possui maior numero de faltas e o ("<< departamento <<") com ("<< faltasDepartamento <<") faltas." << std::endl;
+
 }
 
 
